@@ -1,0 +1,43 @@
+name: icon-theme-vimix
+build-base: core24
+base: bare
+version: 'test'
+platforms:
+  all:
+    build-on: [amd64]
+    build-for: [all]
+summary: Vimix icon theme
+description: |
+  A Snap that allows you to use Vimix icons in Snap apps
+grade: stable
+confinement: strict
+
+slots:
+  icon-themes:
+    interface: content
+    source:
+      read:
+        - $SNAP/share/icons/Vimix
+        - $SNAP/share/icons/Vimix-amethyst
+        - $SNAP/share/icons/Vimix-amethyst-dark
+        - $SNAP/share/icons/Vimix-beryl
+        - $SNAP/share/icons/Vimix-beryl-dark
+        - $SNAP/share/icons/Vimix-black
+        - $SNAP/share/icons/Vimix-black-dark
+        - $SNAP/share/icons/Vimix-dark
+        - $SNAP/share/icons/Vimix-doder
+        - $SNAP/share/icons/Vimix-doder-dark
+        - $SNAP/share/icons/Vimix-jade
+        - $SNAP/share/icons/Vimix-jade-dark
+        - $SNAP/share/icons/Vimix-ruby
+        - $SNAP/share/icons/Vimix-ruby-dark
+        - $SNAP/share/icons/Vimix-white
+        - $SNAP/share/icons/Vimix-white-dark
+parts:
+  icon-themes:
+    plugin: dump
+    source: https://github.com/Kyuyrii/icon-theme-vimix-snap/releases/download/icon-theme-vimix/vimix-icon-theme.zip
+    organize:
+      icon-themes: share/icons
+    prime:
+      - share/icons/
