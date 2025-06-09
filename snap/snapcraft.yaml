@@ -1,7 +1,7 @@
 name: icon-theme-vimix
 build-base: core24
 base: bare
-version: 'test'
+version: '2025-06-09'
 platforms:
   all:
     build-on: [amd64]
@@ -36,7 +36,7 @@ slots:
 parts:
   icon-themes:
     plugin: dump
-    source: https://github.com/Kyuyrii/icon-theme-vimix-snap/releases/download/icon-theme-vimix/vimix-icon-theme.zip
+    source: https://github.com/Kyuyrii/icon-theme-vimix-snap/releases/download/icon-theme-vimix/icon-theme-vimix-snap-creation-files_2025-06-09.deb
     organize:
       icon-themes: share/icons
     prime:
