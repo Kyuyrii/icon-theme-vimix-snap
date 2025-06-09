@@ -38,6 +38,6 @@ parts:
     plugin: dump
     source: https://github.com/Kyuyrii/icon-theme-vimix-snap/releases/download/icon-theme-vimix/icon-theme-vimix-snap-creation-files_2025-06-09.deb
     organize:
-      icon-themes: share/icons
+      usr/share/icons: share/icons
     prime:
       - share/icons/
