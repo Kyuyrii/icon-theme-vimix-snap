@@ -17,7 +17,8 @@ slots:
     interface: content
     source:
       read:
-        - $SNAP/share/icons/Vimix
+        - $SNAP/share/icons/Vimix-cursors
+        - $SNAP/share/icons/Vimix-white-cursors
         - $SNAP/share/icons/Vimix-amethyst
         - $SNAP/share/icons/Vimix-amethyst-dark
         - $SNAP/share/icons/Vimix-beryl
